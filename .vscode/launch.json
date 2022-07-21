@@ -1,0 +1,41 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "DOWING DEV",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "showMemoryUsage": true,
+            "args": [
+                "--dart-define=ENV=DEV",
+                "--dart-define=API_ENTRY_POINT=https://dev.dowing-api.com.br/api",
+            ]
+        },
+        {
+            "name": "DOWING HOMOL",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "showMemoryUsage": true,
+            "args": [
+                "--dart-define=ENV=HOMOL",
+                "--dart-define=API_ENTRY_POINT=https://homol.dowing-api.com.br/api",
+            ]
+        },
+        {
+            "name": "DOWING PROD",
+            "request": "launch",
+            "type": "dart",
+            "program": "lib/main.dart",
+            "showMemoryUsage": true,
+            "args": [
+                "--dart-define=ENV=PROD",
+                "--dart-define=API_ENTRY_POINT=API_PROD_LINK",
+            ]
+        }
+    ]
+}

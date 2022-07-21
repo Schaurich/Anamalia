@@ -1,0 +1,8 @@
+include: package:strict/analysis_options.yaml
+
+
+analyzer:
+  exclude:
+    - lib/generated_plugin_registrant.dar
+    - lib/core/config/di/injection.config.dart
+    - lib/*.g.dart
